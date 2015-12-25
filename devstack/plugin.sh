@@ -53,7 +53,7 @@ function install_networking_powervm {
 # start_networking_powervm() - Start the networking_powervm process
 function start_networking_powervm {
     # Check that NovaLink is installed and running
-    check_novalink_install
+    # check_novalink_install
 
     # Start the pvm_sea ml2 agent
     run_process pvm-q-agt "$PVM_SEA_AGENT_BINARY --config-file $NEUTRON_CONF --config-file /$Q_PLUGIN_CONF_FILE"
